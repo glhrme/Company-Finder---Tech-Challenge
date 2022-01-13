@@ -42,12 +42,8 @@ class ServiceManager: ServiceManagerProtocol {
 }
 
 class Service<T: ServiceProtocol> {
-    let requester: ServiceManagerProtocol
-    let baseUrl = "https://empresas.ioasys.com.br/api"
-    
-    init(_ requester: ServiceManagerProtocol) {
-        self.requester = requester
-    }
+    private let requester: ServiceManagerProtocol = ServiceManager()
+    private let baseUrl = "https://empresas.ioasys.com.br/api"
     
     func request(params: T, completion: @escaping (Result<Data, Errors>) -> Void) {
         guard let urlRequest = self.makeRequest(params) else {
@@ -84,10 +80,12 @@ class Service<T: ServiceProtocol> {
     }
     
     private func makeRequest(_ params: T) -> URLRequest? {
-        guard let url = URL(string: params.url) else { return nil }
+        guard let url = URL(string: "\(baseUrl)\(params.version)\(params.url)") else { return nil }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = params.method.rawValue
-        urlRequest.httpBody = params.body
+        if let data = params.body {
+            urlRequest.httpBody = data
+        }
         return urlRequest
     }
     
@@ -102,4 +100,6 @@ class Service<T: ServiceProtocol> {
             return .failure(.parse(error))
         }
     }
+    
+    
 }

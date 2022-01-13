@@ -24,4 +24,8 @@ class LoginViewController: BaseViewController {
         super.init()
     }
 
+    @IBAction func didLoginTouched(_ sender: Any) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        self.viewModel.login(email: email, password: password)
+    }
 }
