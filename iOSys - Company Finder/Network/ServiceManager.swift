@@ -16,6 +16,7 @@ protocol ServiceProtocol {
     var url: String { get }
     var body: Data? { get }
     var method: HttpMethod { get }
+    var version: Versions { get }
 }
 
 protocol ServiceManagerProtocol {
@@ -30,6 +31,10 @@ enum Errors: Error {
     case dataIsNull
 }
 
+enum Versions {
+    case v1
+}
+
 class ServiceManager: ServiceManagerProtocol {
     func request(request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
         URLSession.shared.dataTask(with: request, completionHandler: completion).resume()
@@ -38,6 +43,7 @@ class ServiceManager: ServiceManagerProtocol {
 
 class Service<T: ServiceProtocol> {
     let requester: ServiceManagerProtocol
+    let baseUrl = "https://empresas.ioasys.com.br/api"
     
     init(_ requester: ServiceManagerProtocol) {
         self.requester = requester
@@ -78,8 +84,11 @@ class Service<T: ServiceProtocol> {
     }
     
     private func makeRequest(_ params: T) -> URLRequest? {
-        // TODO
-        return nil
+        guard let url = URL(string: params.url) else { return nil }
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = params.method.rawValue
+        urlRequest.httpBody = params.body
+        return urlRequest
     }
     
     private func parse<U: Codable>(data: Data?, model: U.Type) -> Result<U, Errors> {
