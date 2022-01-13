@@ -16,6 +16,7 @@
 		1138E367278FA40200E2F67B /* iOSys___Company_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E366278FA40200E2F67B /* iOSys___Company_FinderTests.swift */; };
 		1138E371278FA40200E2F67B /* iOSys___Company_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */; };
 		1138E373278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */; };
+		1138E381278FA49D00E2F67B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E380278FA49D00E2F67B /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1138E36C278FA40200E2F67B /* iOSys - Company FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSys - Company FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderUITests.swift"; sourceTree = "<group>"; };
 		1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		1138E380278FA49D00E2F67B /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		1138E37F278FA41400E2F67B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1138E380278FA49D00E2F67B /* ServiceManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				1138E354278FA3FF00E2F67B /* ViewController.swift in Sources */,
 				1138E350278FA3FF00E2F67B /* AppDelegate.swift in Sources */,
 				1138E352278FA3FF00E2F67B /* SceneDelegate.swift in Sources */,
+				1138E381278FA49D00E2F67B /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
