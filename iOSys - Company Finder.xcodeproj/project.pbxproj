@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD6BCDEF8D36A46CC3C8B07 /* Pods_iOSys___Company_FinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB8AD93F9516B59FF41BB2B /* Pods_iOSys___Company_FinderTests.framework */; };
 		1138E350278FA3FF00E2F67B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E34F278FA3FF00E2F67B /* AppDelegate.swift */; };
 		1138E352278FA3FF00E2F67B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E351278FA3FF00E2F67B /* SceneDelegate.swift */; };
 		1138E359278FA40200E2F67B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1138E358278FA40200E2F67B /* Assets.xcassets */; };
@@ -14,16 +15,16 @@
 		1138E367278FA40200E2F67B /* iOSys___Company_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E366278FA40200E2F67B /* iOSys___Company_FinderTests.swift */; };
 		1138E371278FA40200E2F67B /* iOSys___Company_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */; };
 		1138E373278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */; };
-		1138E381278FA49D00E2F67B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E380278FA49D00E2F67B /* ServiceManager.swift */; };
 		1138E385278FB26B00E2F67B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E384278FB26B00E2F67B /* MainCoordinator.swift */; };
 		1138E387278FB31A00E2F67B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E386278FB31A00E2F67B /* LoginCoordinator.swift */; };
 		1138E38E278FB4CE00E2F67B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E38C278FB4CE00E2F67B /* LoginViewController.swift */; };
 		1138E38F278FB4CE00E2F67B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1138E38D278FB4CE00E2F67B /* LoginViewController.xib */; };
-		1138E394278FB6FF00E2F67B /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E393278FB6FF00E2F67B /* LoginApi.swift */; };
 		1138E396278FB70A00E2F67B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E395278FB70A00E2F67B /* LoginService.swift */; };
 		1138E39B278FBF0700E2F67B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E39A278FBF0700E2F67B /* LoginModel.swift */; };
 		1138E39E278FC11900E2F67B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E39D278FC11900E2F67B /* LoginViewModel.swift */; };
 		1138E3A3278FC1BF00E2F67B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E3A2278FC1BF00E2F67B /* BaseViewController.swift */; };
+		35242DD044478C427676D4DB /* Pods_iOSys___Company_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */; };
+		4D9CAD0EBBF9AC5212FB3ED8 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,20 +52,27 @@
 		1138E35B278FA40200E2F67B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1138E35D278FA40200E2F67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1138E362278FA40200E2F67B /* iOSys - Company FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSys - Company FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1138E366278FA40200E2F67B /* iOSys___Company_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderTests.swift"; sourceTree = "<group>"; };
+		1138E366278FA40200E2F67B /* iOSys___Company_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSys___Company_FinderTests.swift; sourceTree = "<group>"; };
 		1138E36C278FA40200E2F67B /* iOSys - Company FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSys - Company FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderUITests.swift"; sourceTree = "<group>"; };
-		1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderUITestsLaunchTests.swift"; sourceTree = "<group>"; };
-		1138E380278FA49D00E2F67B /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSys___Company_FinderUITests.swift; sourceTree = "<group>"; };
+		1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSys___Company_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1138E384278FB26B00E2F67B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1138E386278FB31A00E2F67B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1138E38C278FB4CE00E2F67B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1138E38D278FB4CE00E2F67B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		1138E393278FB6FF00E2F67B /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
 		1138E395278FB70A00E2F67B /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		1138E39A278FBF0700E2F67B /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		1138E39D278FC11900E2F67B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1138E3A2278FC1BF00E2F67B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		566C6B0DD90F265B84FB42E2 /* Pods-iOSys - Company Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.release.xcconfig"; sourceTree = "<group>"; };
+		776C90869EF96BB7C9A5A28E /* Pods-iOSys - Company Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.debug.xcconfig"; sourceTree = "<group>"; };
+		79AD966592AE916AA6F98E96 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B489417A0EFECC499CA555F /* Pods-iOSys - Company FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company FinderTests.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company FinderTests/Pods-iOSys - Company FinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8DBD4BDA18DE8573C600E26 /* Pods-iOSys - Company FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company FinderTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company FinderTests/Pods-iOSys - Company FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED9BCCE70707621DF0897E99 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EDB8AD93F9516B59FF41BB2B /* Pods_iOSys___Company_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSys___Company_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSys___Company_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35242DD044478C427676D4DB /* Pods_iOSys___Company_Finder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD6BCDEF8D36A46CC3C8B07 /* Pods_iOSys___Company_FinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9CAD0EBBF9AC5212FB3ED8 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +110,8 @@
 				1138E365278FA40200E2F67B /* iOSys - Company FinderTests */,
 				1138E36F278FA40200E2F67B /* iOSys - Company FinderUITests */,
 				1138E34D278FA3FF00E2F67B /* Products */,
+				5044A87774E858C232F85FD3 /* Pods */,
+				34F7309B6132ABB822B7BC93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				1138E391278FB6EE00E2F67B /* Login */,
-				1138E380278FA49D00E2F67B /* ServiceManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -201,7 +213,6 @@
 		1138E391278FB6EE00E2F67B /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				1138E393278FB6FF00E2F67B /* LoginApi.swift */,
 				1138E395278FB70A00E2F67B /* LoginService.swift */,
 			);
 			path = Login;
@@ -223,6 +234,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		34F7309B6132ABB822B7BC93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */,
+				FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */,
+				EDB8AD93F9516B59FF41BB2B /* Pods_iOSys___Company_FinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5044A87774E858C232F85FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				776C90869EF96BB7C9A5A28E /* Pods-iOSys - Company Finder.debug.xcconfig */,
+				566C6B0DD90F265B84FB42E2 /* Pods-iOSys - Company Finder.release.xcconfig */,
+				79AD966592AE916AA6F98E96 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig */,
+				ED9BCCE70707621DF0897E99 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig */,
+				C8DBD4BDA18DE8573C600E26 /* Pods-iOSys - Company FinderTests.debug.xcconfig */,
+				7B489417A0EFECC499CA555F /* Pods-iOSys - Company FinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1138E376278FA40200E2F67B /* Build configuration list for PBXNativeTarget "iOSys - Company Finder" */;
 			buildPhases = (
+				4E19F13D42F026FBB8A84C98 /* [CP] Check Pods Manifest.lock */,
 				1138E348278FA3FF00E2F67B /* Sources */,
 				1138E349278FA3FF00E2F67B /* Frameworks */,
 				1138E34A278FA3FF00E2F67B /* Resources */,
+				58CC799C2A29BC6093D27472 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1138E379278FA40200E2F67B /* Build configuration list for PBXNativeTarget "iOSys - Company FinderTests" */;
 			buildPhases = (
+				F0BD2254DC776769635C3FBA /* [CP] Check Pods Manifest.lock */,
 				1138E35E278FA40200E2F67B /* Sources */,
 				1138E35F278FA40200E2F67B /* Frameworks */,
 				1138E360278FA40200E2F67B /* Resources */,
@@ -265,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1138E37C278FA40200E2F67B /* Build configuration list for PBXNativeTarget "iOSys - Company FinderUITests" */;
 			buildPhases = (
+				851D976334EA5D1B59FD87E4 /* [CP] Check Pods Manifest.lock */,
 				1138E368278FA40200E2F67B /* Sources */,
 				1138E369278FA40200E2F67B /* Frameworks */,
 				1138E36A278FA40200E2F67B /* Resources */,
+				0FE867ED542E4E15F9CABB05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +389,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FE867ED542E4E15F9CABB05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E19F13D42F026FBB8A84C98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSys - Company Finder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58CC799C2A29BC6093D27472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851D976334EA5D1B59FD87E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSys - Company Finder-iOSys - Company FinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0BD2254DC776769635C3FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSys - Company FinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1138E348278FA3FF00E2F67B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -361,8 +504,6 @@
 				1138E352278FA3FF00E2F67B /* SceneDelegate.swift in Sources */,
 				1138E39B278FBF0700E2F67B /* LoginModel.swift in Sources */,
 				1138E385278FB26B00E2F67B /* MainCoordinator.swift in Sources */,
-				1138E394278FB6FF00E2F67B /* LoginApi.swift in Sources */,
-				1138E381278FA49D00E2F67B /* ServiceManager.swift in Sources */,
 				1138E39E278FC11900E2F67B /* LoginViewModel.swift in Sources */,
 				1138E396278FB70A00E2F67B /* LoginService.swift in Sources */,
 			);
@@ -530,6 +671,7 @@
 		};
 		1138E377278FA40200E2F67B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776C90869EF96BB7C9A5A28E /* Pods-iOSys - Company Finder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -557,6 +699,7 @@
 		};
 		1138E378278FA40200E2F67B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566C6B0DD90F265B84FB42E2 /* Pods-iOSys - Company Finder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -584,6 +727,7 @@
 		};
 		1138E37A278FA40200E2F67B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DBD4BDA18DE8573C600E26 /* Pods-iOSys - Company FinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +753,7 @@
 		};
 		1138E37B278FA40200E2F67B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B489417A0EFECC499CA555F /* Pods-iOSys - Company FinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -634,6 +779,7 @@
 		};
 		1138E37D278FA40200E2F67B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AD966592AE916AA6F98E96 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -657,6 +803,7 @@
 		};
 		1138E37E278FA40200E2F67B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED9BCCE70707621DF0897E99 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

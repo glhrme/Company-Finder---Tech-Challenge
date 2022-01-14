@@ -7,12 +7,8 @@
 
 import Foundation
 
-class LoginService: Service<LoginAPI> {
+class LoginService {
     func fetchLogin(_ loginModel: LoginModel, completion: @escaping (Result<LoginReponseModel, Errors>) -> Void) {
-        self.request(params: .login(loginModel), model: LoginReponseModel.self) { result in
-            DispatchQueue.main.async {
-                completion(result)
-            }
-        }
+        // TODO
     }
 }

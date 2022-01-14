@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests : NSObject
+@end
+@implementation PodsDummy_Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests
+@end
