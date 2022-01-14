@@ -23,6 +23,8 @@
 		1138E39B278FBF0700E2F67B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E39A278FBF0700E2F67B /* LoginModel.swift */; };
 		1138E39E278FC11900E2F67B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E39D278FC11900E2F67B /* LoginViewModel.swift */; };
 		1138E3A3278FC1BF00E2F67B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E3A2278FC1BF00E2F67B /* BaseViewController.swift */; };
+		1138E3AA2791053100E2F67B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E3A92791053100E2F67B /* Utils.swift */; };
+		1138E3AC27911EDE00E2F67B /* HeaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E3AB27911EDE00E2F67B /* HeaderManager.swift */; };
 		35242DD044478C427676D4DB /* Pods_iOSys___Company_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */; };
 		4D9CAD0EBBF9AC5212FB3ED8 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,10 +54,10 @@
 		1138E35B278FA40200E2F67B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1138E35D278FA40200E2F67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1138E362278FA40200E2F67B /* iOSys - Company FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSys - Company FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1138E366278FA40200E2F67B /* iOSys___Company_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSys___Company_FinderTests.swift; sourceTree = "<group>"; };
+		1138E366278FA40200E2F67B /* iOSys___Company_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderTests.swift"; sourceTree = "<group>"; };
 		1138E36C278FA40200E2F67B /* iOSys - Company FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSys - Company FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSys___Company_FinderUITests.swift; sourceTree = "<group>"; };
-		1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSys___Company_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1138E370278FA40200E2F67B /* iOSys___Company_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderUITests.swift"; sourceTree = "<group>"; };
+		1138E372278FA40200E2F67B /* iOSys___Company_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSys___Company_FinderUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		1138E384278FB26B00E2F67B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1138E386278FB31A00E2F67B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1138E38C278FB4CE00E2F67B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,15 +66,17 @@
 		1138E39A278FBF0700E2F67B /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		1138E39D278FC11900E2F67B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1138E3A2278FC1BF00E2F67B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1138E3A92791053100E2F67B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1138E3AB27911EDE00E2F67B /* HeaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderManager.swift; sourceTree = "<group>"; };
 		566C6B0DD90F265B84FB42E2 /* Pods-iOSys - Company Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.release.xcconfig"; sourceTree = "<group>"; };
 		776C90869EF96BB7C9A5A28E /* Pods-iOSys - Company Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.debug.xcconfig"; sourceTree = "<group>"; };
 		79AD966592AE916AA6F98E96 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B489417A0EFECC499CA555F /* Pods-iOSys - Company FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company FinderTests.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company FinderTests/Pods-iOSys - Company FinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8DBD4BDA18DE8573C600E26 /* Pods-iOSys - Company FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company FinderTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company FinderTests/Pods-iOSys - Company FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9BCCE70707621DF0897E99 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EDB8AD93F9516B59FF41BB2B /* Pods_iOSys___Company_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSys___Company_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSys___Company_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB8AD93F9516B59FF41BB2B /* Pods_iOSys___Company_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_iOSys___Company_FinderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_iOSys___Company_Finder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				1138E391278FB6EE00E2F67B /* Login */,
+				1138E3AB27911EDE00E2F67B /* HeaderManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				1138E38A278FB4B700E2F67B /* Login */,
+				1138E3A92791053100E2F67B /* Utils.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -254,7 +260,6 @@
 				C8DBD4BDA18DE8573C600E26 /* Pods-iOSys - Company FinderTests.debug.xcconfig */,
 				7B489417A0EFECC499CA555F /* Pods-iOSys - Company FinderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -501,7 +506,9 @@
 				1138E387278FB31A00E2F67B /* LoginCoordinator.swift in Sources */,
 				1138E3A3278FC1BF00E2F67B /* BaseViewController.swift in Sources */,
 				1138E350278FA3FF00E2F67B /* AppDelegate.swift in Sources */,
+				1138E3AC27911EDE00E2F67B /* HeaderManager.swift in Sources */,
 				1138E352278FA3FF00E2F67B /* SceneDelegate.swift in Sources */,
+				1138E3AA2791053100E2F67B /* Utils.swift in Sources */,
 				1138E39B278FBF0700E2F67B /* LoginModel.swift in Sources */,
 				1138E385278FB26B00E2F67B /* MainCoordinator.swift in Sources */,
 				1138E39E278FC11900E2F67B /* LoginViewModel.swift in Sources */,

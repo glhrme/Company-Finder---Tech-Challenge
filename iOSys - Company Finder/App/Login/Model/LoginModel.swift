@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginModel {
+struct LoginModel: Encodable {
     let email: String
     let password: String
 }
@@ -20,5 +20,9 @@ struct LoginReponseModel: Codable {
     struct Investor: Codable {
         let id: Int
         let investorName: String
+        
+        enum CodingKeys: String, CodingKey {
+            case id, investorName = "investor_name"
+        }
     }
 }
