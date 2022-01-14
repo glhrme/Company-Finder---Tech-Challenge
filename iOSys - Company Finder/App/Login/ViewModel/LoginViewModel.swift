@@ -7,8 +7,17 @@
 
 import Foundation
 
+protocol LoginDelegate: AnyObject {
+    func goHome()
+}
+
 class LoginViewModel {
     let service = LoginService()
+    let delegate: LoginDelegate
+    
+    init(_ delegate: LoginDelegate) {
+        self.delegate = delegate
+    }
     
     func login(email: String, password: String) {
         self.loginRequest(loginModel: .init(email: email, password: password))
@@ -19,10 +28,10 @@ class LoginViewModel {
     
     private func loginRequest(loginModel: LoginModel) {
         service.fetchLogin(loginModel) { [weak self] (result) in
-            guard self != nil else { return }
+            guard let self = self else { return }
             switch result {
             case .success(let response):
-                print(response)
+                self.delegate.goHome()
             case .failure(let errors):
                 print(errors)
             }
