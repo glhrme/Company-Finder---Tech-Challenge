@@ -28,6 +28,9 @@
 		1138E3AE2791228B00E2F67B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E3AD2791228B00E2F67B /* HomeCoordinator.swift */; };
 		1138E3B2279122D100E2F67B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138E3B0279122D100E2F67B /* HomeViewController.swift */; };
 		1138E3B3279122D100E2F67B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1138E3B1279122D100E2F67B /* HomeViewController.xib */; };
+		11D3E866279240CB0028F765 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3E864279240CB0028F765 /* CompanyCell.swift */; };
+		11D3E867279240CB0028F765 /* CompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D3E865279240CB0028F765 /* CompanyCell.xib */; };
+		11D3E869279250DC0028F765 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3E868279250DC0028F765 /* UIView+Extensions.swift */; };
 		35242DD044478C427676D4DB /* Pods_iOSys___Company_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */; };
 		4D9CAD0EBBF9AC5212FB3ED8 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,9 @@
 		1138E3AD2791228B00E2F67B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		1138E3B0279122D100E2F67B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1138E3B1279122D100E2F67B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		11D3E864279240CB0028F765 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		11D3E865279240CB0028F765 /* CompanyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyCell.xib; sourceTree = "<group>"; };
+		11D3E868279250DC0028F765 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		566C6B0DD90F265B84FB42E2 /* Pods-iOSys - Company Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.release.xcconfig"; sourceTree = "<group>"; };
 		776C90869EF96BB7C9A5A28E /* Pods-iOSys - Company Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.debug.xcconfig"; sourceTree = "<group>"; };
 		79AD966592AE916AA6F98E96 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 				1138E34F278FA3FF00E2F67B /* AppDelegate.swift */,
 				1138E351278FA3FF00E2F67B /* SceneDelegate.swift */,
 				1138E3A2278FC1BF00E2F67B /* BaseViewController.swift */,
+				11D3E868279250DC0028F765 /* UIView+Extensions.swift */,
 			);
 			path = BaseApp;
 			sourceTree = "<group>";
@@ -251,10 +258,28 @@
 		1138E3AF279122C300E2F67B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				11D3E862279240A80028F765 /* Cell */,
 				1138E3B0279122D100E2F67B /* HomeViewController.swift */,
 				1138E3B1279122D100E2F67B /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		11D3E862279240A80028F765 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11D3E863279240AF0028F765 /* CompanyCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11D3E863279240AF0028F765 /* CompanyCell */ = {
+			isa = PBXGroup;
+			children = (
+				11D3E864279240CB0028F765 /* CompanyCell.swift */,
+				11D3E865279240CB0028F765 /* CompanyCell.xib */,
+			);
+			path = CompanyCell;
 			sourceTree = "<group>";
 		};
 		34F7309B6132ABB822B7BC93 /* Frameworks */ = {
@@ -391,6 +416,7 @@
 			files = (
 				1138E35C278FA40200E2F67B /* LaunchScreen.storyboard in Resources */,
 				1138E359278FA40200E2F67B /* Assets.xcassets in Resources */,
+				11D3E867279240CB0028F765 /* CompanyCell.xib in Resources */,
 				1138E38F278FB4CE00E2F67B /* LoginViewController.xib in Resources */,
 				1138E3B3279122D100E2F67B /* HomeViewController.xib in Resources */,
 			);
@@ -523,6 +549,7 @@
 				1138E38E278FB4CE00E2F67B /* LoginViewController.swift in Sources */,
 				1138E387278FB31A00E2F67B /* LoginCoordinator.swift in Sources */,
 				1138E3A3278FC1BF00E2F67B /* BaseViewController.swift in Sources */,
+				11D3E866279240CB0028F765 /* CompanyCell.swift in Sources */,
 				1138E350278FA3FF00E2F67B /* AppDelegate.swift in Sources */,
 				1138E3AC27911EDE00E2F67B /* HeaderManager.swift in Sources */,
 				1138E3AE2791228B00E2F67B /* HomeCoordinator.swift in Sources */,
@@ -531,6 +558,7 @@
 				1138E39B278FBF0700E2F67B /* LoginModel.swift in Sources */,
 				1138E385278FB26B00E2F67B /* MainCoordinator.swift in Sources */,
 				1138E39E278FC11900E2F67B /* LoginViewModel.swift in Sources */,
+				11D3E869279250DC0028F765 /* UIView+Extensions.swift in Sources */,
 				1138E3B2279122D100E2F67B /* HomeViewController.swift in Sources */,
 				1138E396278FB70A00E2F67B /* LoginService.swift in Sources */,
 			);

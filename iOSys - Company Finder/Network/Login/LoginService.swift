@@ -10,9 +10,9 @@ import Alamofire
 
 class LoginService {
     func fetchLogin(_ loginModel: LoginModel, completion: @escaping (Result<LoginReponseModel, CustomErrors>) -> Void) {
-        AF.request(Utils.makeUrl(.v1, .login), method: .post, parameters: loginModel).responseData { response in
-            self.setHeaders(headers: response.response?.allHeaderFields)
-            completion(Utils.parse(LoginReponseModel.self, data: response.data))
+        AF.request(Utils.makeUrl(.v1, .login), method: .post, parameters: loginModel).responseData { result in
+            self.setHeaders(headers: result.response?.allHeaderFields)
+            completion(Utils.parse(LoginReponseModel.self, data: result.data))
         }
     }
     
