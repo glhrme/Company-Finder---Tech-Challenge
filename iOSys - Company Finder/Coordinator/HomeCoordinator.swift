@@ -11,6 +11,7 @@ class HomeCoordinator {
     var navigation: UINavigationController?
     
     var homeViewController: HomeViewController?
+    var homeViewModel: HomeViewModel?
     
     func start(navigation: UINavigationController?) -> UIViewController {
         self.navigation = navigation
@@ -19,7 +20,9 @@ class HomeCoordinator {
     }
     
     private func getInitial() -> UIViewController {
-        let homeViewController = HomeViewController()
+        let homeViewModel = HomeViewModel()
+        self.homeViewModel = homeViewModel
+        let homeViewController = HomeViewController(homeViewModel)
         self.homeViewController = homeViewController
         return homeViewController
     }

@@ -13,6 +13,7 @@ enum Base_URL: String {
 
 enum Paths: String {
     case login = "/users/auth/sign_in"
+    case enterprises = "/enterprises"
 }
 
 enum CustomErrors: Error {

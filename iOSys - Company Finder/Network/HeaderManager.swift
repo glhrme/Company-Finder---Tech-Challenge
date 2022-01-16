@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum HeaderList: String {
     case accessToken = "access-token"
@@ -16,12 +17,25 @@ enum HeaderList: String {
 class HeaderManager {
     static var userDefaults = UserDefaults.standard
     
-    static func get(_ header: HeaderList) -> String {
-        guard let data = userDefaults.string(forKey: header.rawValue) else { return "" }
-        return data
+    static func get(_ header: HeaderList) -> String? {
+        return userDefaults.string(forKey: header.rawValue)
     }
     
     static func set(_ value: String, _ header: HeaderList) {
         userDefaults.set(value, forKey: header.rawValue)
+    }
+    
+    static func headers() -> HTTPHeaders {
+        var headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        ]
+        if let authToken = HeaderManager.get(.accessToken), let uid = HeaderManager.get(.uid), let client = HeaderManager.get(.client) {
+            headers[HeaderList.accessToken.rawValue] = authToken
+            headers[HeaderList.uid.rawValue] = uid
+            headers[HeaderList.client.rawValue] = client
+        }
+        
+        return headers
     }
 }
