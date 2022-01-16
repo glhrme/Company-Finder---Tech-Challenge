@@ -13,6 +13,8 @@ class HomeCoordinator {
     var homeViewController: HomeViewController?
     var homeViewModel: HomeViewModel?
     
+    var detailsViewController: DetailsViewController?
+    
     func start(navigation: UINavigationController?) -> UIViewController {
         self.navigation = navigation
         self.navigation?.viewControllers = []
@@ -21,10 +23,19 @@ class HomeCoordinator {
     
     private func getInitial() -> UIViewController {
         let homeViewModel = HomeViewModel()
+        homeViewModel.coordinatorDelegate = self
         self.homeViewModel = homeViewModel
         let homeViewController = HomeViewController(homeViewModel)
         self.homeViewController = homeViewController
         return homeViewController
     }
     
+}
+
+extension HomeCoordinator : HomeCoordinatorDelegate {
+    func GoToDetails(_ enterprise: Enterprise) {
+        let detailsViewController = DetailsViewController(enterprise)
+        self.detailsViewController = detailsViewController
+        self.navigation?.pushViewController(detailsViewController, animated: true)
+    }
 }

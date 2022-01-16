@@ -35,6 +35,10 @@
 		11FE73EF279474F6002653DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE73EE279474F6002653DD /* HomeViewModel.swift */; };
 		11FE73F22794765C002653DD /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE73F12794765C002653DD /* HomeService.swift */; };
 		11FE73F4279490F1002653DD /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE73F3279490F1002653DD /* Debouncer.swift */; };
+		11FE73F8279495AF002653DD /* NotFoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE73F6279495AF002653DD /* NotFoundCell.swift */; };
+		11FE73F9279495AF002653DD /* NotFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FE73F7279495AF002653DD /* NotFoundCell.xib */; };
+		11FE73FD2794999D002653DD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE73FB2794999D002653DD /* DetailsViewController.swift */; };
+		11FE73FE2794999D002653DD /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FE73FC2794999D002653DD /* DetailsViewController.xib */; };
 		35242DD044478C427676D4DB /* Pods_iOSys___Company_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470C179BAD6EAE102A1C163 /* Pods_iOSys___Company_Finder.framework */; };
 		4D9CAD0EBBF9AC5212FB3ED8 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B89BE9B564942946496B5 /* Pods_iOSys___Company_Finder_iOSys___Company_FinderUITests.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +92,10 @@
 		11FE73EE279474F6002653DD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		11FE73F12794765C002653DD /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		11FE73F3279490F1002653DD /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		11FE73F6279495AF002653DD /* NotFoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundCell.swift; sourceTree = "<group>"; };
+		11FE73F7279495AF002653DD /* NotFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundCell.xib; sourceTree = "<group>"; };
+		11FE73FB2794999D002653DD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		11FE73FC2794999D002653DD /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		566C6B0DD90F265B84FB42E2 /* Pods-iOSys - Company Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.release.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.release.xcconfig"; sourceTree = "<group>"; };
 		776C90869EF96BB7C9A5A28E /* Pods-iOSys - Company Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder/Pods-iOSys - Company Finder.debug.xcconfig"; sourceTree = "<group>"; };
 		79AD966592AE916AA6F98E96 /* Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSys - Company Finder-iOSys - Company FinderUITests/Pods-iOSys - Company Finder-iOSys - Company FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +222,7 @@
 		1138E389278FB4B200E2F67B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				11FE73FA27949971002653DD /* Details */,
 				1138E3AF279122C300E2F67B /* Home */,
 				1138E38A278FB4B700E2F67B /* Login */,
 				1138E3A92791053100E2F67B /* Utils.swift */,
@@ -280,6 +289,7 @@
 		11D3E862279240A80028F765 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				11FE73F527949591002653DD /* NotFoundCell */,
 				11D3E863279240AF0028F765 /* CompanyCell */,
 			);
 			path = Cell;
@@ -316,6 +326,24 @@
 				11FE73F12794765C002653DD /* HomeService.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		11FE73F527949591002653DD /* NotFoundCell */ = {
+			isa = PBXGroup;
+			children = (
+				11FE73F6279495AF002653DD /* NotFoundCell.swift */,
+				11FE73F7279495AF002653DD /* NotFoundCell.xib */,
+			);
+			path = NotFoundCell;
+			sourceTree = "<group>";
+		};
+		11FE73FA27949971002653DD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				11FE73FB2794999D002653DD /* DetailsViewController.swift */,
+				11FE73FC2794999D002653DD /* DetailsViewController.xib */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		34F7309B6132ABB822B7BC93 /* Frameworks */ = {
@@ -450,10 +478,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FE73FE2794999D002653DD /* DetailsViewController.xib in Resources */,
 				1138E35C278FA40200E2F67B /* LaunchScreen.storyboard in Resources */,
 				1138E359278FA40200E2F67B /* Assets.xcassets in Resources */,
 				11D3E867279240CB0028F765 /* CompanyCell.xib in Resources */,
 				1138E38F278FB4CE00E2F67B /* LoginViewController.xib in Resources */,
+				11FE73F9279495AF002653DD /* NotFoundCell.xib in Resources */,
 				1138E3B3279122D100E2F67B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +614,7 @@
 			files = (
 				11FE73EF279474F6002653DD /* HomeViewModel.swift in Sources */,
 				1138E38E278FB4CE00E2F67B /* LoginViewController.swift in Sources */,
+				11FE73F8279495AF002653DD /* NotFoundCell.swift in Sources */,
 				11FE73F4279490F1002653DD /* Debouncer.swift in Sources */,
 				1138E387278FB31A00E2F67B /* LoginCoordinator.swift in Sources */,
 				11FE73EC2794742F002653DD /* EnterpriseModel.swift in Sources */,
@@ -592,6 +623,7 @@
 				11FE73F22794765C002653DD /* HomeService.swift in Sources */,
 				1138E350278FA3FF00E2F67B /* AppDelegate.swift in Sources */,
 				1138E3AC27911EDE00E2F67B /* HeaderManager.swift in Sources */,
+				11FE73FD2794999D002653DD /* DetailsViewController.swift in Sources */,
 				1138E3AE2791228B00E2F67B /* HomeCoordinator.swift in Sources */,
 				1138E352278FA3FF00E2F67B /* SceneDelegate.swift in Sources */,
 				1138E3AA2791053100E2F67B /* Utils.swift in Sources */,

@@ -11,10 +11,15 @@ protocol HomeViewDelegete: AnyObject {
     func updateData()
 }
 
+protocol HomeCoordinatorDelegate: AnyObject {
+    func GoToDetails(_ enterprise: Enterprise)
+}
+
 class HomeViewModel {
-    var enterprises: Enterprises?
+    var enterprises: Enterprises = .init(enterprises: [])
     lazy var service: HomeService? = HomeService()
     weak var delegate: HomeViewDelegete?
+    weak var coordinatorDelegate: HomeCoordinatorDelegate?
     
     func searchEnterprises(_ searchString: String?) {
         service?.fetchEnterprises(searchString ?? "") { result in
@@ -25,6 +30,10 @@ class HomeViewModel {
                 print(error)
             }
         }
+    }
+    
+    func goToDetails(_ enterprise: Enterprise) {
+        self.coordinatorDelegate?.GoToDetails(enterprise)
     }
     
     private func updateEnterprises(_ enterprises: Enterprises) {

@@ -54,7 +54,6 @@ class CompanyCell: UICollectionViewCell {
                 self.imageView.image = UIImage(named: "book")
             }
         }
-                
     }
 
 }
