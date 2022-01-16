@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="iOSys___Company_Finder" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="Xfs-Lg-DD0" id="Y6n-u0-05y"/>
+                <outlet property="textField" destination="BsO-Cm-OLV" id="txD-u9-z6f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,6 +32,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="0IG-TF-Thk"/>
+                    </connections>
                 </textField>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xfs-Lg-DD0">
                     <rect key="frame" x="24" y="223.5" width="327" height="443.5"/>

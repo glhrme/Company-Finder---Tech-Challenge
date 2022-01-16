@@ -11,9 +11,9 @@ enum Base_URL: String {
     case v1 = "https://empresas.ioasys.com.br/api/v1"
 }
 
-enum Paths: String {
-    case login = "/users/auth/sign_in"
-    case enterprises = "/enterprises"
+enum Paths {
+    case login
+    case enterprises(name: String)
 }
 
 enum CustomErrors: Error {
@@ -23,7 +23,16 @@ enum CustomErrors: Error {
 
 class Utils {
     static func makeUrl(_ base: Base_URL, _ path: Paths) -> String {
-        return "\(base.rawValue)\(path.rawValue)"
+        switch path {
+        case .login:
+            return Utils.makeString(base.rawValue, "/users/auth/sign_in")
+        case .enterprises(let name):
+            return Utils.makeString(base.rawValue, "/enterprises?name=\(name)")
+        }
+    }
+    
+    private static func makeString(_ base: String, _ path: String) -> String {
+        return base + path
     }
     
     static func parse<U: Codable>(_ model: U.Type, data: Data?) -> Result<U, CustomErrors> {

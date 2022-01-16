@@ -16,8 +16,8 @@ class HomeViewModel {
     lazy var service: HomeService? = HomeService()
     weak var delegate: HomeViewDelegete?
     
-    func searchEnterprises() {
-        service?.fetchEnterprises { result in
+    func searchEnterprises(_ searchString: String?) {
+        service?.fetchEnterprises(searchString ?? "") { result in
             switch result {
             case .success(let enterprises):
                 self.updateEnterprises(enterprises)

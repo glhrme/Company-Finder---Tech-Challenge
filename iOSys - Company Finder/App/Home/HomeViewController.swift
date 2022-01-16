@@ -11,8 +11,17 @@ class HomeViewController: BaseViewController {
 
     let identifierCell = "CompanyCell"
     let homeViewModel: HomeViewModel
+    let debouncer = Debouncer(timeInterval: 0.3)
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBAction func textFieldDidChange(_ sender: UITextField) {
+        debouncer.renewInterval()
+        debouncer.handler = {
+            self.homeViewModel.searchEnterprises(self.textField.text)
+        }
+    }
     
     init(_ viewModel: HomeViewModel) {
         self.homeViewModel = viewModel
@@ -29,7 +38,7 @@ class HomeViewController: BaseViewController {
     }
     
     private func loadInitialData() {
-        self.homeViewModel.searchEnterprises()
+        self.homeViewModel.searchEnterprises("")
     }
 }
 
