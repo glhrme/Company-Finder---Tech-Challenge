@@ -7,6 +7,7 @@ target 'iOSys - Company Finder' do
 
   # Pods for iOSys - Company Finder
   pod 'Alamofire'
+pod 'Kingfisher'
 
   target 'iOSys - Company FinderTests' do
     inherit! :search_paths
